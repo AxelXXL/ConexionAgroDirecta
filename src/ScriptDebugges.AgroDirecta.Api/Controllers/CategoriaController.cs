@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ScriptDebugges.AgroDirecta.Api.Services;
 using ScriptDebugges.AgroDirecta.Application.DataBase.Tb_Categoria.Commands.CreateCategoria;
 using ScriptDebugges.AgroDirecta.Application.DataBase.Tb_Categoria.Commands.DeleteCategoria;
 using ScriptDebugges.AgroDirecta.Application.DataBase.Tb_Categoria.Commands.UpdateCategoria;
@@ -18,12 +19,14 @@ namespace ScriptDebugges.AgroDirecta.Api.Controllers
             
         }
 
+        [Auth]
         [HttpPost]
         public async Task<IActionResult> test()
         {
             return StatusCode(StatusCodes.Status200OK, ResponseApiService.Response(StatusCodes.Status200OK, "{}", "Ejecucion exitosa"));
         }
 
+        [Auth]
         [HttpPost("create")]
         public async Task<IActionResult> Create(
             [FromBody] CreateCategoriaModel model,
@@ -33,6 +36,7 @@ namespace ScriptDebugges.AgroDirecta.Api.Controllers
             return StatusCode(StatusCodes.Status201Created, ResponseApiService.Response(StatusCodes.Status201Created, data));
         }
 
+        [Auth]
         [HttpPost("update")]
         public async Task<IActionResult> Update(
             [FromBody] UpdateCategoriaModel model,
@@ -42,6 +46,7 @@ namespace ScriptDebugges.AgroDirecta.Api.Controllers
             return StatusCode(StatusCodes.Status201Created, ResponseApiService.Response(StatusCodes.Status201Created, data,"Actualizado"));
         }
 
+        [Auth]
         [HttpDelete("delete/{idCategoria}")]
         public async Task<IActionResult> Delete(
             int idCategoria,
