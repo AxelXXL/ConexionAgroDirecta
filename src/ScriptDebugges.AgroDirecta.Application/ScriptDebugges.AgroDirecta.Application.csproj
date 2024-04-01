@@ -7,6 +7,30 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="DataBase\Tb_Cultivo\**" />
+    <Compile Remove="DataBase\Tb_Pedido\**" />
+    <Compile Remove="DataBase\Tb_Prediccion\**" />
+    <Compile Remove="DataBase\Tb_Producto\**" />
+    <Compile Remove="DataBase\Tb_Rol\**" />
+    <Compile Remove="DataBase\Tb_UnidadMedida\**" />
+    <Compile Remove="DataBase\Tb_Usuario\**" />
+    <EmbeddedResource Remove="DataBase\Tb_Cultivo\**" />
+    <EmbeddedResource Remove="DataBase\Tb_Pedido\**" />
+    <EmbeddedResource Remove="DataBase\Tb_Prediccion\**" />
+    <EmbeddedResource Remove="DataBase\Tb_Producto\**" />
+    <EmbeddedResource Remove="DataBase\Tb_Rol\**" />
+    <EmbeddedResource Remove="DataBase\Tb_UnidadMedida\**" />
+    <EmbeddedResource Remove="DataBase\Tb_Usuario\**" />
+    <None Remove="DataBase\Tb_Cultivo\**" />
+    <None Remove="DataBase\Tb_Pedido\**" />
+    <None Remove="DataBase\Tb_Prediccion\**" />
+    <None Remove="DataBase\Tb_Producto\**" />
+    <None Remove="DataBase\Tb_Rol\**" />
+    <None Remove="DataBase\Tb_UnidadMedida\**" />
+    <None Remove="DataBase\Tb_Usuario\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
     <PackageReference Include="FluentValidation" Version="11.9.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
@@ -16,23 +40,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ScriptDebugges.AgroDirecta.Domain\ScriptDebugges.AgroDirecta.Domain.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="DataBase\Tb_Cultivo\Commands\" />
-    <Folder Include="DataBase\Tb_Cultivo\Queries\" />
-    <Folder Include="DataBase\Tb_Pedido\Commands\" />
-    <Folder Include="DataBase\Tb_Pedido\Queries\" />
-    <Folder Include="DataBase\Tb_Prediccion\Commands\" />
-    <Folder Include="DataBase\Tb_Prediccion\Queries\" />
-    <Folder Include="DataBase\Tb_Producto\Commands\" />
-    <Folder Include="DataBase\Tb_Producto\Queries\" />
-    <Folder Include="DataBase\Tb_Rol\Commands\" />
-    <Folder Include="DataBase\Tb_Rol\Queries\" />
-    <Folder Include="DataBase\Tb_UnidadMedida\Commands\" />
-    <Folder Include="DataBase\Tb_UnidadMedida\Queries\" />
-    <Folder Include="DataBase\Tb_Usuario\Commands\" />
-    <Folder Include="DataBase\Tb_Usuario\Queries\" />
   </ItemGroup>
 
 </Project>
