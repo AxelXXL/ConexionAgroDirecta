@@ -1,12 +1,9 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using ScriptDebugges.AgroDirecta.Api.Models;
+using ScriptDebugges.AgroDirecta.Api.Services;
 
-namespace ScriptDebugges.AgroDirecta.Application.Token
+namespace ScriptDebugges.AgroDirecta.Api.Services
 {
     public class API : BaseServices
     {
