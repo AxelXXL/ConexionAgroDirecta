@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.9.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ScriptDebugges.AgroDirecta.Domain\ScriptDebugges.AgroDirecta.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DataBase\Tb_Cultivo\Commands\" />
+    <Folder Include="DataBase\Tb_Cultivo\Queries\" />
+    <Folder Include="DataBase\Tb_Pedido\Commands\" />
+    <Folder Include="DataBase\Tb_Pedido\Queries\" />
+    <Folder Include="DataBase\Tb_Prediccion\Commands\" />
+    <Folder Include="DataBase\Tb_Prediccion\Queries\" />
+    <Folder Include="DataBase\Tb_Producto\Commands\" />
+    <Folder Include="DataBase\Tb_Producto\Queries\" />
+    <Folder Include="DataBase\Tb_Rol\Commands\" />
+    <Folder Include="DataBase\Tb_Rol\Queries\" />
+    <Folder Include="DataBase\Tb_UnidadMedida\Commands\" />
+    <Folder Include="DataBase\Tb_UnidadMedida\Queries\" />
+    <Folder Include="DataBase\Tb_Usuario\Commands\" />
+    <Folder Include="DataBase\Tb_Usuario\Queries\" />
+  </ItemGroup>
+
+</Project>
