@@ -22,7 +22,7 @@ namespace ScriptDebugges.AgroDirecta.Api.Controllers
         {
             
         }
-        [Auth]
+        //[Auth]
         [HttpPost("create")]
         public async Task<IActionResult> Create(
            [FromBody] CreateProductosModel model,

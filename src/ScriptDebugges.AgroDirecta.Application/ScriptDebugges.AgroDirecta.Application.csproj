@@ -7,24 +7,27 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="DataBase\NewFolder1\**" />
+    <Compile Remove="DataBase\NewFolder\**" />
     <Compile Remove="DataBase\Tb_Cultivo\**" />
     <Compile Remove="DataBase\Tb_Pedido\**" />
     <Compile Remove="DataBase\Tb_Prediccion\**" />
     <Compile Remove="DataBase\Tb_Producto\**" />
     <Compile Remove="DataBase\Tb_Rol\**" />
-    <Compile Remove="DataBase\Tb_UnidadMedida\**" />
+    <EmbeddedResource Remove="DataBase\NewFolder1\**" />
+    <EmbeddedResource Remove="DataBase\NewFolder\**" />
     <EmbeddedResource Remove="DataBase\Tb_Cultivo\**" />
     <EmbeddedResource Remove="DataBase\Tb_Pedido\**" />
     <EmbeddedResource Remove="DataBase\Tb_Prediccion\**" />
     <EmbeddedResource Remove="DataBase\Tb_Producto\**" />
     <EmbeddedResource Remove="DataBase\Tb_Rol\**" />
-    <EmbeddedResource Remove="DataBase\Tb_UnidadMedida\**" />
+    <None Remove="DataBase\NewFolder1\**" />
+    <None Remove="DataBase\NewFolder\**" />
     <None Remove="DataBase\Tb_Cultivo\**" />
     <None Remove="DataBase\Tb_Pedido\**" />
     <None Remove="DataBase\Tb_Prediccion\**" />
     <None Remove="DataBase\Tb_Producto\**" />
     <None Remove="DataBase\Tb_Rol\**" />
-    <None Remove="DataBase\Tb_UnidadMedida\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,6 +40,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ScriptDebugges.AgroDirecta.Domain\ScriptDebugges.AgroDirecta.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DataBase\Tb_UnidadMedida\Queries\" />
   </ItemGroup>
 
 </Project>
