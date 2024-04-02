@@ -11,6 +11,7 @@ using ScriptDebugges.AgroDirecta.Application.DataBase.Tb_Productos.Commands.Dele
 using ScriptDebugges.AgroDirecta.Application.DataBase.Tb_Productos.Commands.UpdateProducto;
 using ScriptDebugges.AgroDirecta.Application.DataBase.Tb_Productos.Queries.GetAllProductosQuery;
 using ScriptDebugges.AgroDirecta.Application.DataBase.Tb_Productos.Queries.GetProductosByIdQuery;
+using ScriptDebugges.AgroDirecta.Application.SecurityEncrypt;
 using ScriptDebugges.AgroDirecta.Application.Validators.Categoria;
 
 namespace ScriptDebugges.AgroDirecta.Application
@@ -46,8 +47,8 @@ namespace ScriptDebugges.AgroDirecta.Application
             services.AddScoped<IValidator<CreateCategoriaModel>, CreateCategoriaValidator>();
             #endregion
 
-            #region Token
-
+            #region Security
+            services.AddTransient<Security>();
             #endregion
             return services;
         }
