@@ -40,7 +40,7 @@ namespace ScriptDebugges.AgroDirecta.Application
             services.AddTransient<IUpdateProductoCommand, UpdateProductoCommand>();
             services.AddTransient<IDeleteProductoCommand, DeleteProductoCommand>();
             services.AddTransient <IGetAllProductosQuery,GetAllProductosQuery>();
-            services.AddTransient <IGetProductosByIdQuery,IGetProductosByIdQuery>();
+            services.AddTransient <IGetProductosByIdQuery,GetProductosByIdQuery>();
             #endregion
 
             #region Validators

@@ -3,7 +3,7 @@ using ScriptDebugges.AgroDirecta.Application.DataBase.Tb_Productos.Queries.GetAl
 
 namespace ScriptDebugges.AgroDirecta.Application.DataBase.Tb_Productos.Queries.GetProductosByIdQuery
 {
-    public class GetProductosByIdQuery
+    public class GetProductosByIdQuery : IGetProductosByIdQuery
     {
         private readonly IDataBaseService _dataBaseService;
 

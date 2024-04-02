@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ScriptDebugges.AgroDirecta.Application.DataBase.Tb_Productos.Queries.GetAllProductosQuery
+﻿namespace ScriptDebugges.AgroDirecta.Application.DataBase.Tb_Productos.Queries.GetAllProductosQuery
 {
-    public interface IGetAllProductosQuery 
+    public interface IGetAllProductosQuery
     {
         Task<List<GetAllProductosModel>> Execute();
     }
