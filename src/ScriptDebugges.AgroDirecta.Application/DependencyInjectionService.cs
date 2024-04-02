@@ -48,6 +48,10 @@ namespace ScriptDebugges.AgroDirecta.Application
             services.AddTransient<ICreateUserQuery, CreateUserQuery>();
             #endregion
 
+            #region
+            services.AddTransient<ICreateUserQuery, CreateUserQuery>();
+            #endregion
+
             #region Validators
             services.AddScoped<IValidator<CreateCategoriaModel>, CreateCategoriaValidator>();
             #endregion

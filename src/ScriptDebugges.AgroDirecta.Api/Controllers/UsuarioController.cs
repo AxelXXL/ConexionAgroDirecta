@@ -26,7 +26,7 @@ namespace ScriptDebugges.AgroDirecta.Api.Controllers
             }
             else
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, ResponseApiService.Response(StatusCodes.Status500InternalServerError, "Ocurrio un error inesperado."));
+                return StatusCode(StatusCodes.Status409Conflict, ResponseApiService.Response(StatusCodes.Status409Conflict, "Ocurrio un error inesperado."));
             }
         }
     }

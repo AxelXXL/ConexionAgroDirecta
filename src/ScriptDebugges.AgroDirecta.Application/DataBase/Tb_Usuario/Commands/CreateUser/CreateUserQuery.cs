@@ -16,13 +16,11 @@ namespace ScriptDebugges.AgroDirecta.Application.DataBase.Tb_Usuario.Commands.Cr
 
         public async Task<bool> Execute(CreateUserModelResponse newUser)
         {
-            if(newUser.ConfirmarContrasena != newUser.Contrasena)
-                return false;
 
             var entity = _mapper.Map<Tb_UsuarioEntity>(newUser);
             await _dataBaseService.Tb_Usuario.AddAsync(entity);
             await _dataBaseService.SaveAsync();
-            return false;
+            return true;
         }
     }
 }

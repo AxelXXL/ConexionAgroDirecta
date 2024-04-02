@@ -12,13 +12,13 @@ namespace ScriptDebugges.AgroDirecta.Application.DataBase.Tb_Usuario.Commands.Cr
 
     public class CreateUserModelResponse
     {
-        public string Nombre_Usuario { get; set; }
+        public string NombreUsuario { get; set; }
         public string Correo { get; set; }
         public string Contrasena { get; set; }
-        public string ConfirmarContrasena { get; set; }
-        public int ID_Rol { get; set; }
+        public int ID_ROL { get; set; }
         public string Telefono { get; set; }
         public string Ubicacion { get; set; }
-        public byte[]? Imagen_Perfil { get; set; }
+        public string Imagen_Perfil { get; set; }
+        public bool Activo { get; set; }
     }
 }
