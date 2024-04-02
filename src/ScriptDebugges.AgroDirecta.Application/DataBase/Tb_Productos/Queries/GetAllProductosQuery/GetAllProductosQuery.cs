@@ -4,7 +4,7 @@ using ScriptDebugges.AgroDirecta.Domain.Entities.Tb_UnidadMedida;
 
 namespace ScriptDebugges.AgroDirecta.Application.DataBase.Tb_Productos.Queries.GetAllProductosQuery
 {
-    public class GetAllProductosQuery
+    public class GetAllProductosQuery : IGetAllProductosQuery
     {
         private readonly IDataBaseService _dataBaseService;
 

@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ScriptDebugges.AgroDirecta.Application.DataBase.Tb_Productos.Queries.GetAllProductosQuery
 {
-    internal class IGetAllProductosQuery
+    public interface IGetAllProductosQuery 
     {
+        Task<List<GetAllProductosModel>> Execute();
     }
 }
