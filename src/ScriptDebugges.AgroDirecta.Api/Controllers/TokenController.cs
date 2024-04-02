@@ -1,13 +1,18 @@
-﻿using ScriptDebugges.AgroDirecta.Api.Models;
+﻿using Microsoft.AspNetCore.Mvc;
+using ScriptDebugges.AgroDirecta.Api.Models;
 using ScriptDebugges.AgroDirecta.Api.Services;
-using System.Web.Http;
+using ScriptDebugges.AgroDirecta.Application.Exceptions;
 
 namespace ScriptDebugges.AgroDirecta.Api.Controllers
 {
-    public class TokenController : ApiController
+    [Route("api/v1/Token")]
+    [ApiController]
+    [TypeFilter(typeof(ExceptionManager))]
+    public class TokenController : ControllerBase
     {
-        [Route("api/GetToken")]
-        [HttpGet]
+        public TokenController() { }
+
+        [HttpGet("GetToken")]
         public TokenResponseModel GenerateNewToken(Guid ID_App)
         {
             return new TokenResponseModel() { Token = Security.GenerateNewToken(ID_App) };

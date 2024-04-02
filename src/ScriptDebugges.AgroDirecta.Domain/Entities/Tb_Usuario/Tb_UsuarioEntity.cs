@@ -26,5 +26,26 @@ namespace ScriptDebugges.AgroDirecta.Domain.Entities.Tb_Usuario
         public ICollection<Tb_PedidoEntity> PedidosVendedor { get; set; }
         public ICollection<Tb_PedidoEntity> PedidosComprador { get; set; }
         public ICollection<Tb_CultivoEntity> Cultivos { get; set; }
+
+        public override bool Equals(object obj)
+        {
+            if(obj == null || GetType() != obj.GetType()) 
+                return false;
+
+            Tb_UsuarioEntity other = (Tb_UsuarioEntity) obj;
+            return NombreUsuario == other.NombreUsuario &&
+                Correo == other.Correo &&
+                Contrasena == other.Contrasena &&
+                ID_ROL == other.ID_ROL &&
+                Telefono == other.Telefono &&
+                Ubicacion == other.Ubicacion &&
+                Imagen_Perfil == other.Imagen_Perfil &&
+                Activo == other.Activo;
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }
