@@ -11,6 +11,7 @@ using ScriptDebugges.AgroDirecta.Application.DataBase.Tb_Productos.Commands.Dele
 using ScriptDebugges.AgroDirecta.Application.DataBase.Tb_Productos.Commands.UpdateProducto;
 using ScriptDebugges.AgroDirecta.Application.DataBase.Tb_Productos.Queries.GetAllProductosQuery;
 using ScriptDebugges.AgroDirecta.Application.DataBase.Tb_Productos.Queries.GetProductosByIdQuery;
+using ScriptDebugges.AgroDirecta.Application.DataBase.Tb_Usuario.Commands.CreateUser;
 using ScriptDebugges.AgroDirecta.Application.SecurityEncrypt;
 using ScriptDebugges.AgroDirecta.Application.Validators.Categoria;
 
@@ -39,13 +40,18 @@ namespace ScriptDebugges.AgroDirecta.Application
             services.AddTransient<ICreateProductosCommand, CreateProductosCommand>();
             services.AddTransient<IUpdateProductoCommand, UpdateProductoCommand>();
             services.AddTransient<IDeleteProductoCommand, DeleteProductoCommand>();
-            services.AddTransient <IGetAllProductosQuery,GetAllProductosQuery>();
-            services.AddTransient <IGetProductosByIdQuery,GetProductosByIdQuery>();
+            services.AddTransient<IGetAllProductosQuery, GetAllProductosQuery>();
+            services.AddTransient<IGetProductosByIdQuery, GetProductosByIdQuery>();
+            #endregion
+
+            #region Usuarios
+            services.AddTransient<ICreateUserQuery, CreateUserQuery>();
             #endregion
 
             #region Validators
             services.AddScoped<IValidator<CreateCategoriaModel>, CreateCategoriaValidator>();
             #endregion
+
 
             #region Security
             services.AddTransient<Security>();
