@@ -39,8 +39,4 @@
     <ProjectReference Include="..\ScriptDebugges.AgroDirecta.Domain\ScriptDebugges.AgroDirecta.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="DataBase\Tb_Usuario\Queries\" />
-  </ItemGroup>
-
 </Project>
