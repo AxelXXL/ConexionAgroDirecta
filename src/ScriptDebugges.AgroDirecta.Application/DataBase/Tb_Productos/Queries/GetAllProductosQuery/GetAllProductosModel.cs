@@ -6,9 +6,9 @@
         public string Nombre_Producto { get; set; }
         public string Descripcion { get; set; }
         public decimal Precio_Producto { get; set; }
-        public int ID_Categoria { get; set; }
-        public int ID_Usuario { get; set; }
-        public int ID_UnidadMedida { get; set; }
+        public string Categoria { get; set; }
+        public string Usuario { get; set; }
+        public string UnidadMedida { get; set; }
         public int Stock { get; set; }
         public string Imagen_Producto { get; set; }
         public bool activo { get; set; }
