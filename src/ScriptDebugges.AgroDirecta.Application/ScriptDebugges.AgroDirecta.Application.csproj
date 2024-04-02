@@ -13,21 +13,18 @@
     <Compile Remove="DataBase\Tb_Producto\**" />
     <Compile Remove="DataBase\Tb_Rol\**" />
     <Compile Remove="DataBase\Tb_UnidadMedida\**" />
-    <Compile Remove="DataBase\Tb_Usuario\**" />
     <EmbeddedResource Remove="DataBase\Tb_Cultivo\**" />
     <EmbeddedResource Remove="DataBase\Tb_Pedido\**" />
     <EmbeddedResource Remove="DataBase\Tb_Prediccion\**" />
     <EmbeddedResource Remove="DataBase\Tb_Producto\**" />
     <EmbeddedResource Remove="DataBase\Tb_Rol\**" />
     <EmbeddedResource Remove="DataBase\Tb_UnidadMedida\**" />
-    <EmbeddedResource Remove="DataBase\Tb_Usuario\**" />
     <None Remove="DataBase\Tb_Cultivo\**" />
     <None Remove="DataBase\Tb_Pedido\**" />
     <None Remove="DataBase\Tb_Prediccion\**" />
     <None Remove="DataBase\Tb_Producto\**" />
     <None Remove="DataBase\Tb_Rol\**" />
     <None Remove="DataBase\Tb_UnidadMedida\**" />
-    <None Remove="DataBase\Tb_Usuario\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -40,6 +37,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ScriptDebugges.AgroDirecta.Domain\ScriptDebugges.AgroDirecta.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DataBase\Tb_Usuario\Queries\" />
   </ItemGroup>
 
 </Project>
